@@ -1,0 +1,1 @@
+export const api = 'http://loacalhost:3333/api'

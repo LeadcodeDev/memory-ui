@@ -1,17 +1,17 @@
-<script setup lang="ts">
-import { useHead } from '@vueuse/head'
-
-// https://github.com/vueuse/head
-// you can use this to manipulate the document head in any components,
-// they will be rendered correctly in the html results with vite-ssg
-useHead({
-  title: 'Vitesse',
-  meta: [
-    { name: 'description', content: 'Opinionated Vite Starter Template' },
-  ],
-})
-</script>
-
 <template>
   <router-view />
 </template>
+
+<script setup>
+// This starter template is using Vue 3 experimental <script setup> SFCs
+// Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
+</script>
+
+<style lang="scss">
+.btn {
+  @apply px-2 py-1 rounded-md;
+  &.primary {
+    @apply bg-blue-500 hover: bg-blue-600 text-white;
+  }
+}
+</style>
